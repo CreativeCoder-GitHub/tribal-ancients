@@ -58,28 +58,28 @@ Buildings
   *hunter|hunters
     name:Hunter|Hunters
     cost refund:100%
-    cost increase:0%
+    cost increase:100%
     cost:1 people
     desc:Hunters are people in the tribe who bring back meat.
     on tick:yield 10 meat
   *farmer|farmers
     name:Farmer|Farmers
     cost refund:100%
-    cost increase:0%
+    cost increase:100%
     cost:1 people
     desc:Farmers grow fruits for your tribe.
     on tick:yield 10 fruit
   *lumberjack|lumberjacks
     name:Lumberjack|Lumberjacks
     cost refund:100%
-    cost increase:0%
+    cost increase:100%
     cost:1 people
     desc:Lumberbacks cut down wood for your tribe.
     on tick:yield 10 wood
   *miner|miners
     name:Miner|Miners
     cost refund:100%
-    cost increase:0%
+    cost increase:100%
     cost:1 people
     desc:Miners mine stone for your tribe.
     on tick:yield 10 stone
@@ -116,3 +116,10 @@ Upgrades
   *wellUpgrade1
     name:Deeper Wells
     desc:Wells are <b>twice as efficient.</b>
+    cost:5 stone
+
+Items
+  *fertilizer
+    name:Fertilizer
+    desc:Every one fertilizer makes farmers <b>twice as efficient.</b>
+    passive:multiply yield of farmers by 2
