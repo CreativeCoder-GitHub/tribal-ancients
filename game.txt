@@ -53,9 +53,7 @@ Buildings
   *well|wells
     name:Well|Wells
     desc:A source of water
-    cost: 5 water
-    cost: 5 stone
-    cost: 3 wood
+    cost:5 water,5 stone,3 wood
     on tick:yield 5 water
   *hunter|hunters
     name:Hunter|Hunters
@@ -75,6 +73,12 @@ Buildings
     cost:1 people
     desc:Lumberbacks cut down wood for your tribe.
     on tick:yield 10 wood
+  *miner|miners
+    name:Miner|Miners
+    cost refund:100%
+    cost:1 people
+    desc:Miners mine stone for your tribe.
+    on tick:yield 10 stone
 
 Layout
   *main
