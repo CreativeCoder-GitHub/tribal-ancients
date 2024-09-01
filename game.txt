@@ -28,7 +28,7 @@ Resources
     start with:5
   *totalPopulation
     name:Tribesperson|Tribespeople
-    is always: (people + hunters + farmers)
+    is always: (people + hunters + farmers + lumberjacks)
 
 Buttons
   *workBtn
@@ -47,9 +47,9 @@ Buildings
     start with:1
     always hidden
     on tick:yield 0.1 people
-    on tick:yield (-5 * ) water
-    on tick:yield (-5 * (people + hunters + farmers)) fruit
-    on tick:yield (-5 * (people + hunters + farmers)) meat
+    on tick:yield (-5 * totalPopulation) water
+    on tick:yield (-5 * totalPopulation) fruit
+    on tick:yield (-5 * totalPopulation) meat
   *well|wells
     name:Well|Wells
     desc:A source of water
@@ -67,6 +67,11 @@ Buildings
     cost:1 people
     desc:Farmers grow fruits for your tribe.
     on tick:yield 10 fruit
+  *lumberjack|lumberjacks
+    cost refund:100%
+    cost:1 people
+    desc:Lumberbacks cut down wood for your tribe.
+    on tick:yield 10 wood
 
 Layout
   *main
