@@ -21,6 +21,10 @@ Resources
   *stone
     name:Stone
     desc:Stone can be used to create structures.
+  *peopleCounter
+    name:People Count
+    desc:This is the amount of people in your tribe.
+    is always:(people)
 
 Buttons
   *workBtn
@@ -33,3 +37,35 @@ Buttons
     on click:yield random(0, 2) stone
     on click:anim icon wobble
     class:bigButton hasFlares
+
+Buildings
+  *backgroundWorker
+    start with:1
+    always hidden
+    on tick: yield 0.1 people
+  *people
+    // Initial population is 5
+    start with:5
+    always hidden
+
+Layout
+  *main
+    contains:res, buttons, achievs
+    *res
+      contains:Resources
+      class:fullWidth
+    *buttons
+      contains:Buttons
+    *achievs
+      contains:Achievements
+  *store
+    contains:buildings, upgrades
+    *buildings
+      contains:BulkDisplay, Buildings
+      header:Buildings
+      tooltip origin:left
+    *upgrades
+      contains:Upgrades
+      header:Upgrades
+      costs:hide
+      names:hide
