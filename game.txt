@@ -58,16 +58,19 @@ Buildings
     cost: 3 wood
     on tick:yield 5 water
   *hunter|hunters
+    name:Hunter|Hunters
     cost refund:100%
     cost:1 people
     desc:Hunters are people in the tribe who bring back meat.
     on tick:yield 10 meat
   *farmer|farmers
+    name:Farmer|Farmers
     cost refund:100%
     cost:1 people
     desc:Farmers grow fruits for your tribe.
     on tick:yield 10 fruit
   *lumberjack|lumberjacks
+    name:Lumberjack|Lumberjacks
     cost refund:100%
     cost:1 people
     desc:Lumberbacks cut down wood for your tribe.
