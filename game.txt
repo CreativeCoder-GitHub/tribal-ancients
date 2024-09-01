@@ -1,0 +1,35 @@
+Let's make a game!
+  name:Tribal Ancients
+  desc:You are your tribe's leader. Rule your tribe through times of starving, war, and natural disasters to ensure your tribe's survival.
+
+Settings
+  stylesheet:stuff/bigBlue.css
+
+Resources
+  *water
+    name:Water
+    desc:Your tribe needs water to drink.
+  *fruit
+    name:Fruit
+    desc:Fruits are sweet and tasty. Your tribe loves eating these.
+  *meat
+    name:Meat
+    desc:Meat has lots of protein, key to keeping your tribespeople healthy.
+  *wood
+    name:Wood
+    desc:Wood can be used to create structures.
+  *stone
+    name:Stone
+    desc:Stone can be used to create structures.
+
+Buttons
+  *workBtn
+    name:Perform Work
+    desc:Use this button to manually do work for your tribe.
+    on click:yield random(0, 2) water
+    on click:yield random(0, 2) fruit
+    on click:yield random(0, 2) meat
+    on click:yield random(0, 2) wood
+    on click:yield random(0, 2) stone
+    on click:anim icon wobble
+    class:bigButton hasFlares
