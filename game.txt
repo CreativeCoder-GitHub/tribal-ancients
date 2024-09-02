@@ -120,6 +120,7 @@ Buildings
       if (water < 5) hide gainFertilizerBtn
       if (fruit < 5) hide gainFertilizerBtn
       if (farmers = 0) hide gainFertilizerBtn
+    end
   *well|wells
     name:Well|Wells
     desc:A source of water
