@@ -43,6 +43,13 @@ Buttons
     on click:yield random(0, 2) stone
     on click:anim icon wobble
     class:bigButton hasFlares
+  *gainFertilizer
+    name:Buy Fertilizer
+    desc:Click to buy fertilizer(cost 5 water, 5 fruit). Each fertilizer makes farmers <b>twice as efficient.</b>
+    on click:yield 1 fertilizer
+    on click:yield -5 water
+    on click:yield -5 fruit
+    req:5 water,5 fruit
 
 Buildings
   *backgroundWorker
@@ -103,7 +110,7 @@ Layout
       header:Buildings
       tooltip origin:left
     *upgrades
-      contains:Upgrades, Items
+      contains:Upgrades
       header:Upgrades
       costs:hide
       names:hide
