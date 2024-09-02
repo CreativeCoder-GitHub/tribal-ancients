@@ -172,6 +172,7 @@ Layout
       contains:Buttons
     *achievs
       contains:Achievements
+      class:fullWidth
   *store
     contains:buildings, upgrades, upgrBtns
     *buildings
