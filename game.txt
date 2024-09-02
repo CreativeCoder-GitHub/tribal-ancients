@@ -34,6 +34,11 @@ CSS
     height: 43px;
     margin: 0px;
     float: left;
+  } 
+  #box-achievs
+  {
+    position: fixed;
+    bottom: 0;
   }
 
 Resources
