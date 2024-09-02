@@ -4,12 +4,13 @@ Let's make a game!
 
 Settings
   stylesheet:stuff/bigBlue.css
-  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
+  spritesheet:icons, 16 by 16, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
 
 Resources
   *water
     name:Water
     desc:Your tribe needs water to drink.
+    icon:icons[1,0]
   *fruit
     name:Fruit
     desc:Fruits are sweet and tasty. Your tribe loves eating these.
@@ -17,6 +18,7 @@ Resources
     name:Seeds
     desc:Can grow into delicious fruit!
     start with:5
+    icon:icons[2,0]
   *meat
     name:Meat
     desc:Meat has lots of protein, key to keeping your tribespeople healthy.
@@ -26,6 +28,7 @@ Resources
   *stone
     name:Stone
     desc:Stone can be used to create structures.
+    icon:icons[0,0]
   *totalPopulation
     name:Tribesperson|Tribespeople
     desc:The total number of people in your tribe, including employed and unemployed.
@@ -82,6 +85,7 @@ Buildings
     cost:1 people,5 seeds
     desc:Farmers grow fruits for your tribe.
     on tick:yield 10 fruit
+    on tick:yield 10 seeds
   *lumberjack|lumberjacks
     name:Lumberjack|Lumberjacks
     cost refund:100%
