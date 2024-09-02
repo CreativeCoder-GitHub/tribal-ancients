@@ -4,14 +4,9 @@ Let's make a game!
 
 Settings
   stylesheet:stuff/bigBlue.css
-  spritesheet:icons, 16 by 16, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
+  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
 
 CSS
-  .thing-icon
-  {
-    width: 16px;
-    height: 16px;
-  }
   .box-upgrades
   {
     position: relative;
