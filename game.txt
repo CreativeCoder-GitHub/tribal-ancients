@@ -75,7 +75,7 @@ Resources
     start with:5
   *fertilizerCost
     always hidden
-    start with:5
+    start with:10
 
 Buttons
   *workBtn
@@ -94,7 +94,7 @@ Buttons
     on click:yield 1 fertilizer
     on click:yield -1 * fertilizerCost water
     on click:yield -1 * fertilizerCost fruit
-    on click:yield fertilizerCost * 0.15 fertilizerCost
+    on click:yield fertilizerCost * 0.5 fertilizerCost
   *showAvailUpgr
     name:Available Upgrades
     tag:upgradeSwitcher
