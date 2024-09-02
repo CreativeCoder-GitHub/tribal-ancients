@@ -8,10 +8,10 @@ Settings
   no bulk particles
 
 CSS
-  .box-upgrades
+  #box-upgrades
   {
     position: relative;
-    top: 44px;
+    top: 43px;
   }
   .box-header, .box-footer 
   {
