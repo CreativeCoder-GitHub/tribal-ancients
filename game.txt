@@ -6,6 +6,13 @@ Settings
   stylesheet:stuff/bigBlue.css
   spritesheet:icons, 16 by 16, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
 
+CSS
+  .thing-icon
+  {
+    width: 16px;
+    height: 16px;
+  }
+
 Resources
   *water
     name:Water
@@ -128,6 +135,10 @@ Achievements
     name:Wishing Well
     desc:Have <b>one well</b>.
     req:well > 1
+  *farmerMilestoneOne
+    name:Out on the farm
+    desc:Have <b>one farmer</b>.
+    req:farmer > 1
 
 Upgrades
   *wellUpgrade1
