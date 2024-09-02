@@ -127,6 +127,19 @@ Upgrades
     desc:Wells are <b>twice as efficient.</b>
     cost:5 stone
     req:1 well
+    passive:multiply yield of wells by 2
+  *hunterUpgrade1
+    name:Sharper Spears
+    desc:Hunters are <b>twice as efficient.</b>
+    cost:5 stone
+    req:1 hunter
+    passive:multiply yield of hunters by 2
+*farmerUpgrade1
+    name:Stronger Hoes
+    desc:Farmers are <b>twice as efficient.</b>
+    cost:5 stone
+    req:1 farmer
+    passive:multiply yield of farmers by 2
 
 Items
   *fertilizer
