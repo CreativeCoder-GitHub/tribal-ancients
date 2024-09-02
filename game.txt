@@ -117,10 +117,13 @@ Buildings
   *backgroundWorker
     start with:1
     always hidden
+    on load:hide :Upgrades:owned
     on tick:yield 0.1 people
-    on tick:yield (-3 * totalPopulation) water
-    on tick:yield (-3 * totalPopulation) fruit
-    on tick:yield (-3 * totalPopulation) meat
+    on tick:
+        yield (-3 * totalPopulation) water
+        yield (-3 * totalPopulation) fruit
+        yield (-3 * totalPopulation) meat
+    end
     on tick:
       show gainFertilizerBtn
       if (ItemsLeft = 0) hide gainFertilizerBtn
