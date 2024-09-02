@@ -12,6 +12,31 @@ CSS
     width: 16px;
     height: 16px;
   }
+  .box-upgrades
+  {
+    top: 43px;
+  }
+  .box-header, .box-footer 
+  {
+      padding: 8px;
+      font-size: 15px;
+      font-weight: bold;
+  }
+
+  #box-upgrButtons
+  {
+    width: 50%;
+    left: 50%
+    height: 43px;
+  }
+
+  .upgradeSwitcher
+  {
+    width: 50%;
+    height: 43px;
+    margin: 0px;
+    float: left;
+  }
 
 Resources
   *water
@@ -64,6 +89,25 @@ Buttons
     on click:yield -5 water
     on click:yield -5 fruit
     req:5 water and 5 fruit
+  *showAvailUpgr
+    name:Available Upgrades
+    tag:upgradeSwitcher
+    class:upgradeSwitcher
+    on click:
+      show :Upgrades:notOwned
+      hide :Upgrades:owned
+      anim glow
+    end
+    no tooltip
+  *showOwnedUpgr
+    tag:upgradeSwitcher
+    class:upgradeSwitcher
+    on click:
+      hide :Upgrades:notOwned
+      show :Upgrades:owned
+      anim glow
+    end
+    no tooltip
 
 Buildings
   *backgroundWorker
@@ -119,7 +163,7 @@ Layout
     *achievs
       contains:Achievements
   *store
-    contains:buildings, upgrades
+    contains:buildings, upgrades, upgrBtns
     *buildings
       contains:BulkDisplay, Buildings
       header:Buildings
@@ -129,6 +173,8 @@ Layout
       header:Upgrades
       costs:hide
       names:hide
+    *upgrBtns
+      contains:tag:upgradeSwitcher
 
 Achievements
   *wellMilestoneOne
@@ -141,6 +187,8 @@ Achievements
     req:farmer > 1
 
 Upgrades
+*TEMPLATE
+  on earn:hide this
   *wellUpgrade1
     name:Deeper Wells
     desc:Wells are <b>twice as efficient.</b>
