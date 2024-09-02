@@ -90,7 +90,7 @@ Buttons
     on click:yield 1 fertilizer
     on click:yield -5 water
     on click:yield -5 fruit
-    req:5 water and 5 fruit
+    req:water >= 5 and fruit >= 5 and 1 farmer
   *showAvailUpgr
     name:Available Upgrades
     tag:upgradeSwitcher
