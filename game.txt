@@ -183,11 +183,11 @@ Achievements
   *wellMilestoneOne
     name:Wishing Well
     desc:Have <b>one well</b>.
-    req:well > 1
+    req:1 well
   *farmerMilestoneOne
     name:Out on the farm
     desc:Have <b>one farmer</b>.
-    req:farmer > 1
+    req:1 farmer
 
 Upgrades
 *TEMPLATE
