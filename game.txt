@@ -10,7 +10,6 @@ Settings
 CSS
   #box-upgrades
   {
-    position: relative;
     top: 43px;
   }
   .box-header, .box-footer 
@@ -74,6 +73,9 @@ Resources
     name:Unemployed Tribesperson|Unemployed Tribespeople
     desc:The amount of people available for work in your tribe.
     start with:5
+  *fertilizerCost
+    always hidden
+    start with:5
 
 Buttons
   *workBtn
@@ -88,10 +90,11 @@ Buttons
     class:bigButton hasFlares
   *gainFertilizerBtn
     name:Buy Fertilizer
-    desc:Click to buy fertilizer(cost 5 water, 5 fruit). Each fertilizer makes farmers <b>twice as efficient.</b>
+    desc:Click to buy fertilizer(cost <b>[fertilizerCost]</b> water, <b>[fertilizerCost]</b> fruit). Each fertilizer makes farmers <b>twice as efficient.</b>
     on click:yield 1 fertilizer
-    on click:yield -5 water
-    on click:yield -5 fruit
+    on click:yield -1 * fertilizerCost water
+    on click:yield -1 * fertilizerCost fruit
+    on click:yield fertilizerCost * 0.15 fertilizerCost
   *showAvailUpgr
     name:Available Upgrades
     tag:upgradeSwitcher
