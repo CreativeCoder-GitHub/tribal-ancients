@@ -79,13 +79,12 @@ Buttons
     on click:yield random(0, 2) stone
     on click:anim icon wobble
     class:bigButton hasFlares
-  *gainFertilizer
+  *gainFertilizerBtn
     name:Buy Fertilizer
     desc:Click to buy fertilizer(cost 5 water, 5 fruit). Each fertilizer makes farmers <b>twice as efficient.</b>
     on click:yield 1 fertilizer
     on click:yield -5 water
     on click:yield -5 fruit
-    req:water >= 5 and fruit >= 5 and 1 farmer
   *showAvailUpgr
     name:Available Upgrades
     tag:upgradeSwitcher
@@ -115,6 +114,12 @@ Buildings
     on tick:yield (-3 * totalPopulation) water
     on tick:yield (-3 * totalPopulation) fruit
     on tick:yield (-3 * totalPopulation) meat
+    on tick:
+      if (water >= 5 and fruit >= 5 and 1 farmer and ItemsLeft > 0) show gainFertilizerBtn
+      if (ItemsLeft = 0) hide gainFertilizerBtn
+      if (water < 5) hide gainFertilizerBtn
+      if (fruit < 5) hide gainFertilizerBtn
+      if (farmers = 0) hide gainFertilizerBtn
   *well|wells
     name:Well|Wells
     desc:A source of water
