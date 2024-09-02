@@ -4,7 +4,8 @@ Let's make a game!
 
 Settings
   stylesheet:stuff/bigBlue.css
-  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons48.png  
+  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons48.png
+  no bulk particles
 
 CSS
   .box-upgrades
