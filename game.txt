@@ -4,6 +4,7 @@ Let's make a game!
 
 Settings
   stylesheet:stuff/bigBlue.css
+  spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/icons.png  
 
 Resources
   *water
@@ -21,14 +22,15 @@ Resources
   *stone
     name:Stone
     desc:Stone can be used to create structures.
+  *totalPopulation
+    name:Tribesperson|Tribespeople
+    desc:The total number of people in your tribe, including employed and unemployed.
+    is always: (people + hunters + farmers + lumberjacks + miners)
   *person|people
     // Initial population is 5
     name:Unemployed Tribesperson|Unemployed Tribespeople
     desc:The amount of people available for work in your tribe.
     start with:5
-  *totalPopulation
-    name:Tribesperson|Tribespeople
-    is always: (people + hunters + farmers + lumberjacks + miners)
 
 Buttons
   *workBtn
