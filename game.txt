@@ -116,7 +116,7 @@ Buildings
     on tick:yield (-3 * totalPopulation) fruit
     on tick:yield (-3 * totalPopulation) meat
     on tick:
-      if (water >= 5 and fruit >= 5 and 1 farmer and ItemsLeft > 0) show gainFertilizerBtn
+      show gainFertilizerBtn
       if (ItemsLeft = 0) hide gainFertilizerBtn
       if (water < 5) hide gainFertilizerBtn
       if (fruit < 5) hide gainFertilizerBtn
