@@ -13,6 +13,10 @@ Resources
   *fruit
     name:Fruit
     desc:Fruits are sweet and tasty. Your tribe loves eating these.
+  *seed|seeds
+    name:Seeds
+    desc:Can grow into delicious fruit!
+    start with:5
   *meat
     name:Meat
     desc:Meat has lots of protein, key to keeping your tribespeople healthy.
@@ -75,7 +79,7 @@ Buildings
     name:Farmer|Farmers
     cost refund:100%
     cost increase:100%
-    cost:1 people
+    cost:1 people,5 seeds
     desc:Farmers grow fruits for your tribe.
     on tick:yield 10 fruit
   *lumberjack|lumberjacks
