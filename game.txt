@@ -82,6 +82,7 @@ Buttons
   *workBtn
     name:Perform Work
     desc:Use this button to manually do work for your tribe.
+    icon:https://raw.githubusercontent.com/CreativeCoder-GitHub/tribal-ancients/main/bigButton.png
     on click:yield random(0, 2) water
     on click:yield random(0, 2) fruit
     on click:yield random(0, 2) meat
