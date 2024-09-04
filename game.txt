@@ -240,8 +240,8 @@ Upgrades
     name:Irrigation System
     desc:Farmers are <b>+1% efficient</b> for every well.
     cost:50 stone, 50 water
-    req:5 farmers, 5 well
-    passive:multiply yield of farmers by (0.01 * wells) + 1
+    req:5 farmers, 5 wells
+    passive:multiply yield of farmers by 0.01 * wells + 1
 *laborUpgrade1
     name:Intensive Labor
     desc:The labor button is <b>twice as efficient.</b>
