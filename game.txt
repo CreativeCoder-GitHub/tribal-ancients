@@ -126,11 +126,13 @@ Buildings
     always hidden
     on load:hide :Upgrades:owned
     on tick:yield 0.1 people
+    // Tribepeople consuming resources
     on tick:
         yield (-3 * totalPopulation) water
         yield (-3 * totalPopulation) fruit
         yield (-3 * totalPopulation) meat
     end
+    // Fertilizer button(show or not?)
     on tick:
       show gainFertilizerBtn
       if (ItemsLeft = 0) hide gainFertilizerBtn
@@ -239,7 +241,7 @@ Upgrades
     desc:Farmers are <b>+1% efficient</b> for every well.
     cost:50 stone, 50 water
     req:5 farmers, 5 well
-    passive:multiply yield of farmers by 0.01 * wells
+    passive:multiply yield of farmers by (0.01 * wells) + 1
 *laborUpgrade1
     name:Intensive Labor
     desc:The labor button is <b>twice as efficient.</b>
