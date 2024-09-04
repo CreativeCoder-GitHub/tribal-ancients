@@ -36,9 +36,8 @@ CSS
     float: left;
   } 
   #box-achievs
-  {
-    bottom: 0;
-    text-align: center;
+  { 
+    place-self: center;
   }
 
 Resources
