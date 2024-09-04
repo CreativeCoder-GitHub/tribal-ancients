@@ -76,7 +76,7 @@ Resources
     start with:5
   *fertilizerCost
     always hidden
-    start with:10
+    start with:50
 
 Buttons
   *workBtn
