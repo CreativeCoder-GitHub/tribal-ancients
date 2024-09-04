@@ -36,7 +36,9 @@ CSS
     float: left;
   } 
   #box-achievs
-  { 
+  {
+    position: fixed;
+    bottom: 0;
     place-self: center;
   }
 
