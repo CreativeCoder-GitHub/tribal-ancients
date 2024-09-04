@@ -136,7 +136,7 @@ Buildings
       if (ItemsLeft = 0) hide gainFertilizerBtn
       if (water < 5) hide gainFertilizerBtn
       if (fruit < 5) hide gainFertilizerBtn
-      if (farmers = 0) hide gainFertilizerBtn
+      if (farmers < 25) hide gainFertilizerBtn
     end
   *well|wells
     name:Well|Wells
@@ -207,6 +207,11 @@ Achievements
     name:Out on the farm
     desc:Have <b>one farmer</b>.
     req:1 farmer
+  *farmerMilestoneTwo
+    name:Reap what you sow
+    desc:Have <b>25 farmers</b>.
+    req:25 farmers
+    on earn:toast You now have the ability to buy <b>fertilizer.</b> Each fertilizer you have multiplies the yield of farmers by two.
 
 Upgrades
 *TEMPLATE
@@ -232,13 +237,14 @@ Upgrades
 *farmerUpgradeWell
     name:Irrigation System
     desc:Farmers are <b>+1% efficient</b> for every well.
-    cost:10 stone, 10 water
+    cost:50 stone, 50 water
     req:5 farmers, 5 well
     passive:multiply yield of farmers by 0.01 * wells
 *laborUpgrade1
     name:Intensive Labor
     desc:The labor button is <b>twice as efficient.</b>
     passive:multiply yield of workBtn by 2
+    cost:10 stone
 
 Items
   *fertilizer
